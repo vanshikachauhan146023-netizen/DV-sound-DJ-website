@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>DV SOUND — Admin Reviews</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+  <div class="noise"></div>
+  <main class="admin-shell">
+    <section id="login-view" class="admin-panel login-panel">
+      <div class="admin-brand">DV <span>SOUND & DJ KUKMA</span></div>
+      <p class="eyebrow">OWNER ACCESS</p>
+      <h1>REVIEW<br><em>CONTROL.</em></h1>
+      <p class="admin-intro">Sign in with the owner's Supabase email and password to review today's customer submissions.</p>
+      <form id="login-form" class="admin-form">
+        <label>EMAIL<input id="login-email" type="email" autocomplete="username" required placeholder="owner@example.com"></label>
+        <label>PASSWORD<input id="login-password" type="password" autocomplete="current-password" required placeholder="••••••••"></label>
+        <button class="button button-light" type="submit">LOGIN <span>↗</span></button>
+        <p id="login-message" class="admin-message" aria-live="polite"></p>
+      </form>
+      <a class="admin-back" href="index.html">← BACK TO WEBSITE</a>
+    </section>
+
+    <section id="dashboard-view" class="admin-dashboard" hidden>
+      <header class="admin-topbar">
+        <div>
+          <p class="eyebrow">OWNER DASHBOARD</p>
+          <h1>REVIEWS <em>INBOX.</em></h1>
+        </div>
+        <div class="admin-actions"><button id="refresh-btn" class="button button-ghost">REFRESH</button><button id="logout-btn" class="button button-light">LOG OUT</button></div>
+      </header>
+
+      <div class="admin-stats">
+        <div class="stat-card"><span>ALL APPROVED</span><strong id="approved-count">0</strong></div>
+        <div class="stat-card"><span>PENDING</span><strong id="pending-count">0</strong></div>
+        <div class="stat-card"><span>AVERAGE</span><strong id="admin-average">0.0</strong></div>
+      </div>
+
+      <section class="admin-section">
+        <div class="admin-section-head">
+          <div><p class="eyebrow">TODAY</p><h2>TODAY'S <em>REVIEWS.</em></h2></div>
+          <p id="today-label" class="admin-date"></p>
+        </div>
+        <div id="today-reviews" class="admin-reviews"></div>
+        <p id="today-empty" class="admin-empty" hidden>No reviews submitted today.</p>
+      </section>
+
+      <section class="admin-section">
+        <div class="admin-section-head"><div><p class="eyebrow">MODERATION QUEUE</p><h2>PENDING <em>REVIEWS.</em></h2></div></div>
+        <div id="pending-reviews" class="admin-reviews"></div>
+        <p id="pending-empty" class="admin-empty" hidden>No pending reviews.</p>
+      </section>
+      <p id="dashboard-message" class="admin-message" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

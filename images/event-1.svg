@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<defs><radialGradient id="g"><stop stop-color="#555"/><stop offset="1" stop-color="#080808"/></radialGradient><filter id="blur"><feGaussianBlur stdDeviation="35"/></filter></defs>
+<rect width="1600" height="1100" fill="#080808"/><rect width="1600" height="1100" fill="url(#g)"/>
+<circle cx="300" cy="300" r="260" fill="#fff" opacity=".08" filter="url(#blur)"/><circle cx="1300" cy="700" r="340" fill="#aaa" opacity=".07" filter="url(#blur)"/>
+<path d="M0 800 Q300 600 600 800 T1200 760 T1600 820 V1100 H0Z" fill="#111"/><g fill="#fff" opacity=".8"><circle cx="500" cy="550" r="22"/><circle cx="650" cy="500" r="16"/><circle cx="780" cy="570" r="24"/><circle cx="940" cy="490" r="17"/><circle cx="1080" cy="560" r="20"/></g>
+<text x="90" y="930" fill="#fff" font-family="Arial,sans-serif" font-size="78" font-weight="800" letter-spacing="4">LIVE ENERGY</text>
+<text x="94" y="995" fill="#aaa" font-family="Arial,sans-serif" font-size="24" letter-spacing="8">DV SOUND & DJ KUKMA</text>
+</svg>
